@@ -32,7 +32,8 @@
         const storedPassword = localStorage.getItem('adminPassword');
 
         if (this.username === storedUsername && this.password === storedPassword) {
-          this.$router.push('/blog');
+          this.$router.push('/adblog');
+          this.isAdminLoggedIn = true;
           alert("Login successfull");
         } else {
           alert('Invalid credentials. Please try again or register.');
